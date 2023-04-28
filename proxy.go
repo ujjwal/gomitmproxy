@@ -25,8 +25,8 @@ var errClientCertRequested = errors.New("tls: client cert authentication unsuppo
 //
 // TODO(ameshkov): rework deadlines (see #13 for example).
 const defaultTimeout = 0
-const dialTimeout = 30 * time.Second
-const tlsHandshakeTimeout = 10 * time.Second
+const dialTimeout = 0
+const tlsHandshakeTimeout = 30 * time.Second
 
 // Proxy is a structure with the proxy server configuration and current state.
 type Proxy struct {
